@@ -1,0 +1,23 @@
+.header{
+    background-color: #9bc8ee; ;
+    height: 3rem;
+    padding: 1rem 5rem ;
+    display: flex;
+}
+
+.header img{
+    position: relative;
+    top: -8px;
+    height: 60px;
+    width: 60px;
+}
+
+.header h1 {
+    position: relative;
+    top: -8.5px;
+    color: #1A1A1A ;
+    font-size: 28px; 
+    font-weight: bold;
+    margin-left: auto;
+    text-transform: capitalize;
+}
