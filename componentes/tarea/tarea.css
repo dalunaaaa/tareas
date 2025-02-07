@@ -47,7 +47,7 @@
 .caja-especial {
     width: 8rem;
     height: 3rem;
-    background-color: #4682b4; /* Azul acero */
+    background-color: #4682b4;
     color: white;
     margin: auto;
     grid-column: 7/9;
@@ -62,5 +62,4 @@
     left: -20rem;
     width: 1rem;
     height: 1rem;
-    border: 1px solid #4682b4; /* Azul acero para la caja interna */
-}
+    border: 1px solid #4682b4; 
