@@ -13,6 +13,22 @@ function crearSeccion() {
         } else {
             caja.className = `caja-${i}`;
             caja.textContent = `Tarea ${i}`;
+
+    
+            caja.addEventListener('click', function() {
+                
+                caja.classList.toggle('completada');
+
+                let checkbox = caja.querySelector('input[type="checkbox"]');
+                if (!checkbox) {
+                    checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    caja.appendChild(checkbox);
+                }
+
+                
+                checkbox.checked = !checkbox.checked;
+            });
         }
         
         let cajaInterna = document.createElement('div');
@@ -26,9 +42,6 @@ function crearSeccion() {
 }
 
 export { crearSeccion };
-
-
-
 
 function iniciaContenedor() {
     let contenedor = document.createElement("section");
