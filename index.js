@@ -1,15 +1,13 @@
-//importar los componentes principales
 import { header } from "./componentes/header/header.js";
-import { formulario } from "./componentes/formulario/formulario.js";
-import { crearSeccion } from "./componentes/tarea/tarea.js";
+import { cargarTareas } from "./componentes/tarea/tarea.js"; // Ruta corregida
+import { cargarFormulario } from "./componentes/formulario/formulario.js";
+
 let DOM = document.querySelector("#root");
 
+function CargarDOM() {
+    DOM.appendChild(header());
+    DOM.appendChild(cargarTareas());
+    DOM.appendChild(cargarFormulario());
+}
 
-
-
-DOM.appendChild(header());
-DOM.appendChild(crearSeccion());
-
-
-
-
+CargarDOM();

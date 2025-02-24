@@ -1,0 +1,27 @@
+/* Formulario */
+.formulario {
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto; /* Empuja el formulario hacia la parte inferior */
+}
+
+.formulario input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario button {
+    padding: 0.5rem 1rem;
+    color: #FFFFFF;
+    background-color: #393433;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #87b3d6;
+}
